@@ -58,4 +58,10 @@ Route::group(['middleware' => 'auth'], function(){
 
     //
     Route::post('/aula', 'Academico\AcademicoController@check')->name('check');
+
+
+    //PAGAMENTO
+    Route::get('/pagamento', function(){
+        return view('financeiro.index');
+    });
 });
